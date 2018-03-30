@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/colorBackground"
+        android:background="@color/colorPrimary"
+        android:alpha="@string/opacity" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/colorRed"
+        android:background="@android:color/holo_red_light"
+        android:indeterminate="false"
+        android:layout_above="@+id/colorGreen"
+        android:layout_alignRight="@+id/colorReset"
+        android:layout_alignEnd="@+id/colorReset"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:alpha="@string/opacity" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/colorGreen"
+        android:background="@android:color/holo_green_light"
+        android:indeterminate="false"
+        android:layout_above="@+id/colorBlue"
+        android:layout_alignRight="@+id/colorReset"
+        android:layout_alignEnd="@+id/colorReset"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:alpha="@string/opacity" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/colorBlue"
+        android:background="@android:color/holo_blue_light"
+        android:indeterminate="false"
+        android:layout_alignBottom="@+id/colorBackground"
+        android:layout_alignRight="@+id/colorReset"
+        android:layout_alignEnd="@+id/colorReset"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:alpha="@string/opacity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/colorCheck"
+        android:checked="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:text="Color"
+        android:textSize="@dimen/abc_text_size_large_material" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/colorReset"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ripple_primary_dark"
+        android:textColor="@color/colorAccent" />
+</RelativeLayout>

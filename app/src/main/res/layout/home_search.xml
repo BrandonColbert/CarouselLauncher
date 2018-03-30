@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/homeBackground"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:alpha="@string/opacity" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/homeSettings"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/homeBackground"
+        android:layout_alignEnd="@+id/homeBackground"
+        android:nestedScrollingEnabled="false"
+        android:onClick="showSettings"
+        android:background="@drawable/ripple_primary_dark"
+        android:textColor="@color/colorAccent" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeText"
+        android:singleLine="true"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/ripple_primary"
+        android:layout_alignBottom="@+id/homeBackground"
+        android:hint="Search"
+        android:imeOptions="actionDone"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/homeSettings"
+        android:layout_alignEnd="@+id/homeSettings"
+        android:layout_below="@+id/homeSettings" />
+
+</RelativeLayout>
